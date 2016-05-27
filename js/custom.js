@@ -152,6 +152,24 @@ queue()
 
         d3.select("#slider").call(timer);
 
+        /* Overlay */
+        d3.select("#show_overlay")
+            .on("click", function(d) {
+                var is_clicked = d3.select(this);
+                var voronoi = d3.selectAll("#map .cell");
+                var circles = d3.selectAll("circle");
+
+                if(is_clicked.text() === 'Show Stations and Overlay') {
+                    is_clicked.text('Hide Stations and Overlay');
+                    voronoi.style("stroke", "black");
+                    circles.style("fill", "red");
+                } else {
+                    is_clicked.text('Show Stations and Overlay');
+                    voronoi.style("stroke", "none");
+                    circles.style("fill", "none");
+                }
+            });
+
         /**
          * Show graphs
          */
