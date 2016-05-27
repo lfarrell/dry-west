@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Visualization of Historical Weather Trends of the World" />
+    <meta name="keywords" content="World Historical Temperature Anomalies,Temperatures,Historical Temperature Anomalies" />
+    <title>California - the Drying of the West</title>
+    <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/assets/chroniton/chroniton-example.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div id="note" class="row">
+        <p id="load" class="text-center">Loading ...</p>
+    </div>
+    <div class="row hide">
+        <h1 class="text-center">California - the Drying of the West</h1>
+        <div class="col-sm-12 col-lg-offset-1 col-lg-10">
+            <p>Most of the southwestern United States as been in a drought for the entirety of the 21st century.
+                California has been particularly hard hit in the last five years. The following visualization tracks
+                rainfall across California over the last 15 years month by month, showing the departure from normal
+                rainfall across the state.
+            </p>
+        </div>
+    </div>
+    <div class="row charts hide">
+
+        <div class="col-sm-12 col-lg-offset-1 col-lg-10 text-center">
+            <ul id="legend" class="list-unstyled list-inline">
+                <li>Drier</li>
+                <li class="coloring"><div id="color-1"></div></li>
+                <li class="coloring"><div id="color-2"></div></li>
+                <li class="coloring"><div id="color-3"></div></li>
+                <li class="coloring"><div id="color-4"></div></li>
+                <li class="coloring"><div id="color-5"></div></li>
+                <li class="coloring"><div id="color-6"></div></li>
+                <li class="coloring"><div id="color-7"></div></li>
+                <li class="coloring"><div id="color-8"></div></li>
+                <li class="coloring"><div id="color-9"></div></li>
+                <li class="coloring"><div id="color-10"></div></li>
+                <li class="coloring"><div id="color-11"></div></li>
+                <li>Wetter</li>
+            </ul>
+        </div>
+    <div id="slider" class="col-sm-12 col-lg-offset-1 col-lg-10"></div>
+        <div id="map" class="col-sm-12 col-lg-offset-1 col-lg-10"></div>
+        <div class="col-sm-12 col-lg-12 hide">
+            <footer>
+                <ul class="list-unstyled">
+                    <li><a href="../index.php">Other Visualizations</a></li>
+                    <li><a href="../western_water">Western Water</a></li>
+                    <li><a href="mailto:farrelldlfarrell@gmail.com">Email</a></li>
+                    <li><a href="https://twitter.com/farrelldlfarrel">Twitter</a></li>
+                </ul>
+            </footer>
+        </div>
+        <div class="col-sm-12 col-lg-12 hide">
+            <p class="col-md-offset-1 subfooter">
+                <a href="http://www.ncdc.noaa.gov/monitoring-references/faq/anomalies.php">Anomalies data</a> and
+                <a href="http://www.ncdc.noaa.gov/monitoring-references/faq/anomalies.php">historical averages data</a> courtesy of the
+                National Oceanic and Atmospheric Administration.</p>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.7/d3-tip.min.js"></script>
+<script src="js/assets/chroniton/chroniton-custom.min.js"></script>
+<script src="js/assets/d3-jetpack.min.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript">
+   /* var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-47256145-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })(); */
+</script>
+</body>
+</html>
