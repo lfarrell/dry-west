@@ -23,7 +23,7 @@ p {
 }
 
 circle {
-    fill: red;
+    fill: none;
     stroke: none;
 }
 
@@ -32,7 +32,7 @@ circle {
 #map .cell {
     pointer-events: all;
     opacity: .5;
-    stroke: black;
+    stroke: none;
 }
 
 #map path .show_overlay {
